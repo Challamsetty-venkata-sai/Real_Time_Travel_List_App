@@ -1,0 +1,98 @@
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px 120px 360px 120px;
+  
+}
+.box{
+  border:1px solid black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.header{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: rgb(243, 200, 10);
+}
+.form{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color:rgb(234, 143, 8);
+
+}
+.packinglist{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: brown;
+  display: grid;
+  justify-content: left;
+  align-content: start;
+  
+}
+.footer{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color:greenyellow;
+}
+.forminner{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.addeditems{
+  
+  border:1px solid blue;
+  width:98vw;
+  height:100%;
+  margin-top: 10px;
+  margin-left: 5px;
+  background-color: white;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  row-gap:20px;
+
+
+}
+.item{
+  /* border:1px solid black; */
+  width:200px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  font-size: 22px;
+
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+.sorteditems{
+  margin-left: 5%;
+ 
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+.sorteditems button{
+  width:200px;
+  height:50px;
+  border-radius: 20px;
+}
